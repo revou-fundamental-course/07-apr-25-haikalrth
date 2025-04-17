@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome To Knowvibe</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#profile">Our Profile</a></li>
+          <li><a href="#message">Message Us</a></li>
+        </ul>
+      </nav>
+      <div class="banner">
+        <h1>Hi <span id="userName">User</span>, Welcome To <strong>Knowvibe</strong></h1>
+        <p>Your bridge to mastering future-ready skills</p>
+      </div>
+    </header>
+
+    <section id="profile" class="profile-section">
+      <div class="illustration-carousel">
+        <button class="carousel-btn left" onclick="moveCarousel(-1)">&#10094;</button>
+        <div class="carousel-track">
+          <img src="images/study1.jpg" alt="Belajar 1" />
+          <img src="images/study2.jpg" alt="Belajar 2" />
+          <img src="images/study3.jpg" alt="Belajar 3" />
+        </div>
+        <button class="carousel-btn right" onclick="moveCarousel(1)">&#10095;</button>
+      </div>
+      <div class="profile-content">
+        <h2>About SkillBridge</h2>
+        <p>
+          Knowvibe adalah platform edukasi online yang berfokus pada pengembangan keterampilan masa depan. Kami menyediakan berbagai kursus praktikal seperti pemrograman, desain UI/UX, digital marketing, dan banyak lagi—semuanya disusun
+          oleh instruktur profesional dan industri.
+        </p>
+        <h3>Vision and Mission</h3>
+        <ul>
+          <li><strong>Visi:</strong> Menjadi jembatan utama menuju penguasaan keterampilan masa depan yang relevan dan berdaya saing global.</li>
+          <li>
+            <strong>Misi:</strong>
+            <ul>
+              <li>Menyediakan pembelajaran daring yang berkualitas dan praktikal.</li>
+              <li>Membantu siswa dan profesional membangun portofolio nyata.</li>
+              <li>Menjadi komunitas belajar yang saling mendukung dan terus berkembang.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="locations">
+      <h2>Our Headquarter</h2>
+      <div class="cities">
+        <div class="city">
+          <img src="images/jakarta.jpg" alt="Jakarta" />
+          <p>Jakarta</p>
+        </div>
+        <div class="city">
+          <img src="images/bandung.jpg" alt="Bandung" />
+          <p>Bandung</p>
+        </div>
+        <div class="city">
+          <img src="images/yogyakarta.jpg" alt="Yogyakarta" />
+          <p>Yogyakarta</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="message">
+      <h2>Message Us</h2>
+      <form onsubmit="return validateForm()" class="form-box">
+        <label>Name: <input type="text" id="name" /></label><br />
+        <label>Email: <input type="email" id="email" /></label><br />
+        <label>Phone Number: <input type="text" id="phone" /></label><br />
+        <label>Message: <textarea id="messageInput"></textarea></label><br />
+        <button type="submit">Submit</button>
+      </form>
+      <div id="output" class="submitted-info-box"></div>
+    </section>
+
+    <footer>
+      <p>Created by Haikalrth | Knowvibe</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
